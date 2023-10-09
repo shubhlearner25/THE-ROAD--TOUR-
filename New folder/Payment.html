@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your head content for the payment page) ... -->
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+         padding: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .country-container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px; /* Add some spacing between navbar items */
+    }
+
+    nav ul li:last-child {
+        margin-right: 0; /* Remove right margin from the last item */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <header>
+        <h1>Payment Page</h1>
+       
+    </header>
+    <div class="payment-container">
+        <h2>Payment Information</h2>
+        <!-- Add your payment form here -->
+        <form action="process_payment.php" method="POST">
+            <!-- Payment form fields (e.g., credit card details, amount, etc.) go here -->
+            <input type="text" name="card_number" placeholder="Credit Card Number" required><br>
+            <input type="text" name="expiry_date" placeholder="Expiry Date" required><br>
+            <input type="text" name="cvv" placeholder="CVV" required><br>
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+</html>
